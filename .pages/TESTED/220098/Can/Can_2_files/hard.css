@@ -1,0 +1,534 @@
+/* Slider  */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+
+    display: block;
+
+    top: 50%;
+    margin-top: -35px;
+    width: 72px;
+    height: 72px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    outline: none;
+    /*
+    color: transparent;
+   
+    background: transparent;
+    */
+}
+
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 25px;
+    background-image: url("Arrow3_Left_Normal_64x64.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 25px;
+    left: auto;
+}
+
+
+.slick-next
+{
+    right: 25px;
+    background-image: url("Arrow3_Right_Normal_64x64.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 25px;
+}
+
+
+.slick-prev:hover
+{
+    background-image: url("Arrow3_Left_Hover_64x64.png");
+    background-position: -2px 0;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    background-color: transparent;
+}
+
+.slick-next:hover
+{
+    background-image: url("Arrow3_Right_Hover_64x64.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    background-color: transparent;
+}
+
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 0px;    
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 5px;
+    left: -20px;
+
+    display: block;
+
+   /*width: 100%;*/
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    padding: 0;
+
+    cursor: pointer;
+    border-radius: 10px;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    /*color: transparent;*/
+    border: 0;
+    outline: none;
+    /*background: transparent;*/
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: #007095;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+   
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button {
+    background: #107cc0;
+    color: #107cc0;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+
+/* Slick Wrapper Styles */
+/* Home, Shop */
+.slick_wrapper {
+   position: relative;
+   height: 370px;
+   overflow: hidden;
+}
+
+.slick_wrapper .pagingInfo {
+    color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;    
+    padding: 5px 10px 5px 10px;
+}
+
+.slick_wrapper .pagingInfo .fa-pause, .slick_wrapper .pagingInfo .fa-play {
+    display:none;
+    cursor:pointer;
+    position:relative;
+    z-index:10;
+}
+
+.slick_wrapper .pagingInfo .fa-pause.showIcon, .slick_wrapper .pagingInfo .fa-play.showIcon {    
+    display:inline-block;
+}
+
+.slick_wrapper .pagingInfo .num {    
+    display:inline-block;
+    padding-left:10px;
+    position:relative;
+    z-index:10;
+}
+
+/* Customized pager/play/pause functionality */
+.pagerWrap {
+	position: absolute;
+	bottom: 12px;
+	left: -20px;
+	display: block;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.pagerWrap  .middle {
+	display: inline-block;
+	position: relative;
+	padding: 2px 0px 2px 0px;
+}
+
+.pagerWrap  .controls {
+	display: inline-block;
+	z-index: 5;
+	position: relative;
+}
+
+.pagerWrap  .controls .fa-pause:before, .pagerWrap  .controls .fa-play:before{
+	content: "";	
+}
+
+.slick_wrapper .pagingInfo .fa-pause.showIcon, .slick_wrapper .pagingInfo .fa-play.showIcon {
+	background: url("toggle_slick_sprite.png") no-repeat scroll 0px 0px transparent;
+	overflow: hidden;
+	width: 10px;
+	height:15px;
+	top:3px;
+}
+
+.slick_wrapper .pagingInfo .fa-play.showIcon {
+	background-position:-24px 0px;	
+	left:1px;
+}
+
+.slick_wrapper .pagingInfo .fa-pause.showIcon.hovered {
+	background-position:-10px 0px;		
+}
+
+.slick_wrapper .pagingInfo .fa-play.showIcon.hovered {
+	background-position:-34px 0px;	
+}
+
+ /**** Retina  ****/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+	.slick_wrapper .pagingInfo .fa-pause.showIcon, .slick_wrapper .pagingInfo .fa-play.showIcon {
+		background-image: url("toggle_slick_sprite_retina.png");
+		background-size: 44px 15px;	
+	}	
+
+}
+
+.pagerWrap  .slick-dots {
+	display: inline-block;
+	z-index: 5;
+	position: relative;
+	margin:0;
+	left:0;
+	top: -5px;
+}
+
+.pagerWrap  .slick-dots li {
+	padding-top:5px;
+}
+
+.pagerWrap  .counter {
+	display: inline-block;
+	z-index: 5;
+	position: relative;
+}
+
+.pagerWrap  .backing {
+	background-color: #000;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	z-index: 0;
+}
+
+.slick_wrapper .pagerWrap .pagingInfo {
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  position: relative;
+  left: 0px;
+}
+
+.slick_wrapper .pagerWrap .counter .pagingInfo {
+  padding-left:7px;
+}
+
+.slick_wrapper .pagerWrap .counter .pagingInfo .num {
+  padding-left:0px;
+  font-size:14px;
+}
+
+
+/* Shop Page */
+.slickShop h1 , .slickShop h3 {
+    color:#fff !important;    
+}
+.slickShop .darkGrey_text {
+	color:#353535 !important;
+}
+.slick_wrapper.slick_shop .pagingInfo {
+    /*bottom: 70px;*/
+}
+
+.mobileHeroCopy_shop {
+    background: none repeat scroll 0 0 #333;   
+    height: auto;
+    margin-top:-16px;
+}
+
+.mobileHeroCopy_shop > div {
+    display:none;
+    padding:5px 15px 40px 15px;
+}
+
+.mobileHeroCopy_shop > div h1, .mobileHeroCopy_shop > div h3 {
+    color:#fff !important;   
+}
+
+.mobileHeroCopy_shop > div.showCopy {
+    display:block;   
+}
+
+.mobileHeroCopy_shop > div h3 {
+    font-size:16px !important;
+}
+
+
+/* Home Page styles */
+/* Main Carousel */
+@media only screen and (max-width: 40em) {
+   .slick_home {
+        margin-top:47px;
+  }
+  .slickShop .slick-slide {
+    padding-top:5px;    
+  }
+  .pagerWrap {
+    left:0px;
+  }
+}
+
+@media (max-width:1024px) and (min-width:641px) {
+    /* for tablet, do not show the navigational arrows */
+    .slick-prev, .slick-next{display:none !important;}
+    .slick_home {margin-top:72px;}    
+}

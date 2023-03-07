@@ -1,0 +1,464 @@
+/*-------------------------------------------- */
+/** Sign in Header */
+/*-------------------------------------------- */
+.signInHeader {
+	padding-top: 20px;
+}
+
+/* Header Help Widget */
+.headerLinks {
+	float: right;
+	padding: 3px 0 16px;
+}
+
+.headerLinks ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.headerLinks li {
+	float: left;
+	padding: 0 14px;
+	line-height: 1.2;
+	border-right: 1px solid #c2c2c2;
+}
+
+.headerLinks li:last-child {
+	padding-right: 0;
+	border-right: 0;
+}
+
+.ie8 .headerLinks li + li + li {
+	padding-right: 0px !important;
+	border: 0;
+}
+
+.headerHelp {
+	display: inline-block;
+	float: right;
+	clear: both;
+	margin-bottom: 10px;
+	border: 1px solid #9eafd4;
+}
+
+.headerHelp form {
+	position: relative;
+	float: right;
+}
+
+.headerHelp input,
+.headerHelp button,
+.top5Dropdown {
+	float: left;
+}
+
+.headerHelp input {
+	font-size: 89.66%;
+	width: 215px;
+	height: 30px;
+	padding: 5px 10px;
+	border: 0;
+}
+
+.askBtn {
+	font-size: 93.1%;
+	height: 30px;
+	padding: 0 15px;
+}
+
+.askBtn:focus {
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	outline-color: #66afe9 !important;
+	outline-offset: 2px !important;
+}
+
+.top5Dropdown {
+	position: relative;
+	border-left: 1px solid #9EAFD4;
+	margin: 0 2px;
+}
+
+.top5Dropdown .dropdown-toggle {
+	font-size: 86.21%;
+	margin: 0 2px;
+	padding: 5px 10px;
+	border: 0;
+	background-color: #fff;
+	line-height: 1.6;
+}
+
+.top5Dropdown .dropdown-toggle i {
+	font-size: 137.93%;
+	vertical-align: middle;
+}
+
+.top5Dropdown .dropdown-menu {
+	position: absolute;
+	top: 30px;
+	right: -5px;
+	left: auto;
+	width: 310px;
+	padding: 0 0 10px;
+	color: #09498d;
+}
+
+.top5Dropdown .dropdown-menu ul {
+	padding: 0 10px 0 20px;
+	margin: 0px;
+	float: left;
+	list-style: none;
+}
+
+.top5Dropdown .dropdown-menu li {
+	padding: 10px 0;
+}
+
+.top5Dropdown .dropdown-menu a {
+	margin-left: -5px;
+	font-size: 100%;
+	padding: 0;
+	white-space: normal;
+	color: #09498d;
+}
+
+.ie8 .top5Dropdown .dropdown-menu a {
+	margin-left: 0;
+}
+
+.top5Dropdown .dropdown-header {
+	font-size: 124.14%;
+	font-weight: 400;
+	position: relative;
+	padding: 15px 10px 15px 15px;
+	color: #282828;
+	background-color: #F4F5FA;
+	margin: 0;
+}
+
+.top5Dropdown .closeDropdown {
+	border: 1px solid #f4f5fa;
+}
+
+.top5Dropdown .closeDropdown:hover {
+	border: 1px solid #747474;
+}
+
+.top5Dropdown .closeDropdown:focus, .top5Dropdown .closeDropdown:active {
+	border: 1px dashed #747474;
+	color: #0659b0;
+}
+
+/*-------------------------------------------- */
+/** Sign in Menu bar */
+/*-------------------------------------------- */
+.mainNav {
+	font-weight: 700;
+	position: relative;
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 30px;
+	padding: 8px 0 0;
+	background: url(../../../../../../../../www1.royalbank.com/uos/common/images/navigation/mainnav/level1-bg-1px.gif) top left repeat-x #002888;
+	z-index: 10;
+}
+
+.mainNav ul {
+	display: inherit;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.mainNav ul li {
+	float: left;
+	padding: 0;
+	line-height: 1;
+	background: transparent;
+	padding: 0 15px 7px;
+	border-right: 1px solid #9eafd4;
+}
+
+.mainNav ul li .lastChild {
+	border-right: 0;
+}
+
+.mainNav ul li a {
+	color: #fff;
+	display: inline-block;
+}
+
+.mainNav ul li a:focus {
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	outline-color: #fff !important;
+	outline-offset: 2px !important;
+}
+
+.mainNav ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Signin Page unique styles*/
+#signInPage {
+	padding: 0;
+}
+
+/* SignIn Banner Block */
+#signInBanner {
+	background-color: #0659b0;
+	background-image: url(../../../../../../../../www1.royalbank.com/uos/3m/images/sign-in_bg_image.jpg);
+	background-size: cover;
+	padding: 40px 0 70px;
+}
+
+#primarySignIn {
+	padding: 0px 0 0 60px;
+	border-right: 1px solid #1875d0;
+}
+
+#primarySignIn .toolTip button:focus {
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	outline-color: #fff !important;
+	outline-offset: 2px !important;
+}
+
+#primarySignIn .row {
+	margin: 15px 0;
+}
+
+#primarySignIn h2 {
+	font-size: 151.72%;
+	font-weight: 400;
+	margin: 0 0 30px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+#primarySignIn .signInLabel {
+	font-size: 103.45%;
+	font-weight: 400;
+	margin: 0;
+	color: #fff;
+}
+
+#primarySignIn .checkBoxLabel {
+	font-size: 96.55%;
+	font-weight: 400;
+	margin: 0 3px;
+	color: #fff;
+}
+
+#primarySignIn input[type=text],
+#primarySignIn input[type=password] {
+	margin-top: 10px;
+	padding: 12px 10px;
+	height: 45px;
+	width: 340px;
+	border: 1px solid #0758ae;
+}
+
+#primarySignIn .formBlock {
+	margin: 0 0 30px;
+}
+
+#primarySignIn .lastBlock {
+	margin-bottom: 0;
+}
+
+#primarySignIn .lastBlock .yellowBtnLarge {
+	height: 43px;
+}
+
+#primarySignIn .formLinks {
+	margin-top: 18px;
+}
+
+#primarySignIn .formLinks ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#primarySignIn .formLinks ul li {
+	margin-bottom: 10px;
+}
+
+#primarySignIn .formLinks a {
+	font-size: 96.55%;
+	text-decoration: underline;
+	color: #fff;
+}
+
+#primarySignIn .formLinks a:focus {
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	outline-color: #fff !important;
+	outline-offset: 2px !important;
+}
+
+#secondarySignIn {
+	color: #fff;
+}
+
+#secondarySignIn h2 {
+	font-size: 137.93%;
+	margin: 0 0 30px;
+}
+
+.secondarySignInWidget {
+	padding: 0 40px 72px;
+}
+
+/*-------------------------------------------- */
+/** Post SignIn page  */
+/*-------------------------------------------- */
+#rbunxcgi .selectAccount {
+	display: inline-block;
+	float: left;
+	width: 370px;
+	margin-bottom: 0;
+	padding: 12px 10px;
+	height: 45px;
+}
+
+.editOptions {
+	height: 40px;
+	position: relative;
+	float: left;
+}
+
+.editOptions a {
+	display: block;
+	color: #fff;
+	font-size: 86.21%;
+	padding-top: 10px;
+	text-decoration: underline;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.removeItem {
+	margin-top: 5px;
+}
+
+.removeItem a {
+	padding-top: 0;
+	margin-top: 5px;
+}
+
+#signinServicesSelector {
+	padding-bottom: 0;
+}
+
+#signinServicesSelector select {
+	margin-top: 11px;
+	border: 0px;
+	padding: 12px 10px;
+	height: 45px;
+	border: 1px solid #0758ae;
+}
+
+#signinEnrollWidget .blueBtnChevron,
+.selectSec .blueBtnChevron {
+	background-color: #0659b0;
+	border: 1px solid #237edb;
+	margin-top: -1px;
+}
+
+#signinEnrollWidget .blueBtnChevron:focus,
+.selectSec .blueBtnChevron:focus {
+	outline-width: 2px !important;
+	outline-style: solid !important;
+	outline-color: #fff !important;
+	outline-offset: 2px !important;
+}
+
+#signinEnrollWidget .blueBtnChevron:hover,
+.selectSec .blueBtnChevron:hover {
+	border: 1px solid #a7cbf1;
+}
+
+.selectSec .blueBtnChevron {
+	margin-top: 21px;
+}
+
+.selectSec > h2 {
+	margin-bottom: 0 !important;
+}
+
+/* Sign in Warning Error*/
+.signinWarning {
+	margin-bottom: 40px;
+}
+
+/* OLB Block */
+#olbLinks {
+	position: relative;
+	margin: 0;
+	margin-bottom: 8px;
+	top: -30px;
+}
+
+#olbLinks section {
+	bottom: 0;
+	padding: 30px 27px;
+	background-color: #fff;
+}
+
+#olbLinks section:first-child + section {
+	margin: 0 16px;
+}
+
+#olbLinks::last-child {
+	margin-right: 0;
+}
+
+#olbLinks section ul {
+	margin-bottom: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#olbLinks section li {
+	line-height: 1.4;
+	width: 95%;
+	margin-top: 24px;
+}
+
+#olbLinks section li:first-child {
+	margin-top: 0;
+}
+
+#olbLinks section a {
+	line-height: 1.2;
+}
+
+#olbLinks section h3 {
+	font-size: 124.14%;
+	margin: 0 0 25px;
+	color: #282828;
+}
+
+#olbLinks .col-xs-4 {
+	width: 32.5%;
+}
+
+.ie9 #olbLinks .col-xs-4 {
+	width: 32.425%;
+}
+
+#olbLinks .col-xs-8 {
+	margin-right: 15px;
+}
+
+#olbLinks .col-xs-8 + .col-xs-4 {
+	margin: 0;
+}
+
+.ie9 #olbLinks .col-xs-8 + .col-xs-4,
+.ie10 #olbLinks .col-xs-8 + .col-xs-4 {
+	width: 32%;
+}

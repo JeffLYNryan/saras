@@ -1,0 +1,141 @@
+/*
+ * Lean Slider v1.0.1
+ * http://dev7studios.com/lean-slider
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+
+Last modified 12/23/2022 by C.F.
+ */
+
+
+.lean-slider {
+	position: relative;
+	*zoom: 1;}
+
+.lean-slider:before,
+.lean-slider:after {
+	content: " ";
+	display: table;}
+
+.lean-slider:after {
+	clear: both;}
+
+.lean-slider-slide {
+	float: left;
+	width: 100%;
+	margin-right: -100%;
+	display: none;}
+
+.lean-slider-slide.current { display: block;}
+
+.slider-wrapper { 
+	position: relative; 
+	background: url(images/loading.gif) no-repeat 50% 50%;
+	border-radius:6px;}
+
+.lean-slider {
+	overflow: hidden;
+	box-sizing: border-box;
+	/*border: 1px solid #2b2b2b;*/
+	border-radius: 6px;}
+
+.lean-slider-slide {
+	display: block;
+	position: relative;
+	opacity: 0;
+	-webkit-transition: opacity 0.6s linear;
+	-moz-transition: opacity 0.6s linear;
+	-ms-transition: opacity 0.6s linear;
+	-o-transition: opacity 0.6s linear;
+	transition: opacity 0.6s linear;}
+
+.lean-slider-slide.current { opacity: 1;z-index: 2;}
+.lean-slider-slide img { 
+	display: block;
+	width: 100%;}
+
+#slider-direction-nav {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+ height: 100%;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	opacity: 0.2;
+	z-index: 3;
+	pointer-events: none;
+	filter:Alpha(opacity=0);}
+
+.slider-wrapper:hover #slider-direction-nav { opacity: 1;}
+
+#slider-direction-nav a {
+	float: left;
+	display: block;
+	width: 26px;
+	height: 100%;
+	background: rgba(255, 255, 255, .0) url(images/arrows.png) no-repeat 0% 50%;
+	text-indent: -9999px;}
+
+#slider-direction-nav .lean-slider-next {
+	float: right;
+	background-position: 100% 50%;}
+
+.lean-slider-next, .lean-slider-prev {
+	pointer-events: all;}
+
+#slider-control-nav {
+	padding: 5px 0;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;}
+
+.slider-wrapper:hover #slider-control-nav { opacity: 1;}
+
+#slider-control-nav a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #aaa;
+	border-radius: 15px;
+	text-indent: -9999px;
+	margin: 0 3px;
+	vertical-align: middle;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;}
+
+#slider-control-nav a.active {
+	background: #666; 
+	width: 14px;
+	height: 14px;}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+	and (min-device-width : 320px) 
+	and (max-width : 480px) {
+		#slider-control-nav { /*display: none;*/}
+		#slider-direction-nav,
+		#slider-control-nav { opacity: 1;}
+		/*#slider-direction-nav { top: 5%;}*/
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) {
+		
+		#slider-direction-nav,
+		#slider-control-nav { opacity: 1;}		
+}

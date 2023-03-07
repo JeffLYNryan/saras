@@ -1,0 +1,168 @@
+/*
+ * You can find an example of using Custom CSS in our knowledge base here:
+ * https://kb.x-cart.com/look_and_feel/theme_tweaker/custom_css.html
+ */
+/* Ticket #788767 - Fireworks Module installation */
+#logo img, .company-logo img {
+    max-height: unset;
+}
+@media (min-width: 992px) {
+#logo, .company-logo {
+    height: 63px;
+  }}
+.banner-carousel .carousel-inner {
+    width: 100%;
+}
+
+/* Ticket #793767 — BEGIN */
+@media (min-width:481px) {
+  .subcategory-list .subcategory-icon {
+    width: 150px;
+  }
+}
+@media (max-width:480px) {
+  .subcategory-list .subcategory-icon {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.block-brands span.subcategory-icon {
+  border: unset;
+}
+/* Ticket #793767 — END */
+
+.skin-customer #footer-area h4 {
+    font: 700 28px/22px 'Play',sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.skin-customer #footer-area {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 78px;
+    padding-left: 0;
+    padding-right: 0;
+    background: #222;
+    color: #ffffff;
+}
+
+.skin-customer #footer-area a {
+    color: #ffffff;
+}
+
+.skin-customer #footer-area .footer_contacts li {
+    font: 300 14px/15px 'Ubuntu',sans-serif;
+}
+
+/* Ticket #793758 — BEGIN */
+@media(max-width: 480px) {
+	.skin-customer .category-description .description {
+  		display: contents;
+	}
+}
+/* Ticket #793758 — END */
+
+.skin-customer #footer-area .footer_contacts li {
+  position: relative;
+  margin-top: 10px;
+    display: inline-block !important;
+  
+}
+.skin-customer #footer-area h4 {
+  margin-top: 10px;
+}
+
+.skin-customer #footer-area #footer:before {
+    border-top: 1px solid #7b7b7b;
+    content: '';
+    display: block;
+    margin-top: 80px;
+    margin-bottom: -28px;
+}
+
+.skin-customer #secondary-menu {
+    list-style: none;
+    text-align: left;
+    margin-top: -18px !important;
+    display: inline-block !important;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 767px) {
+.skin-customer #secondary-menu {
+    margin-top: -45px !important;
+   margin-left: -17px;
+}
+  .skin-customer #footer-area h4 {
+    margin-top: -17px;
+}
+  .skin-customer #footer-area .footer_contacts {
+    margin-top: -43px;
+}
+}
+
+
+
+/*
+.skin-customer .block-subcategories.block-brands {
+    pointer-events: none !important;
+}
+*/
+.subcategory-list .subcategory-name {
+
+    display: none;
+}
+@media (max-width: 767px) {
+.skin-customer #footer-area .footer_contacts a {
+vertical-align: unset;
+}
+}
+
+.skin-customer .mobile_header ul.nav-pills{
+  background: #4c4c4c;
+}
+
+@media (min-width: 1200px){
+ul.subcategory-view-icons.subcategory-list.grid-list>li {
+    width: 25%;
+  }}
+
+/* Ticket #805466 - Product Page */
+.breadcrumb {
+  padding-top: 40px;
+}
+/* Ticket #805466 - End */
+
+/* Ticket #795500 - Logo added */
+.footer_logo {
+    margin-top: 25px;
+}
+.footer_logo img {
+    width: 120px;
+}
+@media (max-width:480px) {
+.footer_logo {
+    margin-top: 100px;
+}}
+@media (min-width: 1200px){
+ul.subcategory-view-icons.subcategory-list.grid-list>li {
+width: 25%;
+}}
+
+/* Ticket #806075 */
+.skin-customer .label-orange .label-main-box .content {
+    display: none;
+}
+/* END - Ticket #806075 */
+
+/* Ticket #806568 — BEGIN */
+.navbar-nav>li>a, .navbar-nav>li>span {
+padding: 23px 15px;
+}
+/* Ticket #806568 — END */

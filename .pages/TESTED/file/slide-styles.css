@@ -1,0 +1,836 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Default Slide Styles */
+#slider-control-nav {
+ /* Added parameters */
+ position: absolute;
+ bottom: -2px;
+ z-index: 10;
+ left: 0px;
+ text-align: left;
+ /**/display: none;/**/}
+
+#slider-control-nav a {
+ /* Added parameters */ 
+ border: 1px solid white;}
+
+section {
+ display: flex;
+ min-height: 297px;
+ border-radius: 6px;
+ overflow: hidden;
+ /*text-align: center;*/}
+
+.columnwrap {
+ display: flex;
+ flex-flow: column wrap;}
+
+.columnnowrap {
+ display: flex;
+ flex-flow: column nowrap;}
+
+.rowwrap {
+ display: flex;
+ flex-flow: row wrap;}
+
+.rownowrap {
+ display: flex;
+ flex-flow: row nowrap;}
+
+.gradiate {
+ background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-size: 100%;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ line-height: .9;
+ text-shadow: 0 0 0 transparent !important;}
+
+.border {
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ background-image: none;
+ text-shadow: none;
+ -webkit-text-stroke: 1px white;
+ text-align: center;}
+
+article {
+ flex: 1 2.55vw;
+ border-left: 1px solid #2b2b2b;
+ border-right: 1px solid #2b2b2b;
+ padding: 5px;
+ filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, .3));}
+
+article:first-of-type {
+ border-top: 1px solid #2b2b2b;
+ border-radius: 6px 6px 0px 0px;}
+
+article:last-of-type {
+ border-bottom: 1px solid #2b2b2b;
+ border-radius: 0px 0px 6px 6px;}
+
+.bigimpact {
+ font-family: Impact;
+ line-height: 100%;
+ display: block;
+ text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+
+
+/*Custom Styles for Slides*/
+
+/*Slide 0*/
+.slidezero {
+ background: url(/images/HomePage/wheel-tire-package-link-bg.jpg) no-repeat 83%;
+ background-size: cover;}
+
+.slidezero article {
+ flex-basis: 40px;
+ line-height: 100%;
+ text-align: center;}
+
+.slidezero article:first-of-type {
+ flex-grow: 5;
+ font-size: 49px;
+ color: #e7b72f;
+ padding: 5vw 0px 0px 0px;}
+
+.slidezero article:last-of-type {
+ flex-grow: 0;
+ font-size: 30px;
+ color: #ffffff;
+ padding: 0px 0px 5vw 0px;}
+
+/*Slide 1*/
+.slideone {
+ color: #ffffff;
+ background: url('/images/HomePage/country-drive-slide-bg.jpg') center center no-repeat;
+ background-size: cover;}
+
+.slideone article {
+ flex-basis: 40px;
+ line-height: 100%;
+ text-align: center;}
+
+.slideone article:first-of-type {
+ flex-grow: 5;
+ font-size: 48px;}
+
+.slideone article:last-of-type {
+ flex-grow: 0;
+ font-size: 30px;}
+
+.slideone article:last-of-type span {
+ color: #E7B72F;
+ padding: 0% 0px 1% 0px;}
+
+/*Slide 2*/
+.slidetwo * {
+ border: none !important;}
+
+.slidetwo {
+ color: #ff7600;
+ background: url('/images/HomePage/rubicon-express-slide-bg.jpg') center right no-repeat;
+ background-size: cover;
+ text-align: left;}
+
+.slidetwo article {
+ flex-basis: 125px;
+ line-height: 100%;}
+
+.slidetwo article img {
+ max-width: 550px;}
+
+.slidetwo article:first-of-type {
+ flex-grow: 0;
+ font-size: 120px;}
+
+.slidetwo article:last-of-type {
+ background: url('/images/HomePage/rubicon-express-logo.png') center center no-repeat;
+ background-size: contain;
+ flex-grow: 0;
+ font-size: 30px;
+ text-align: right;
+ padding: 0% 1% 0px 1%;
+ max-width: 550px;
+ margin-bottom: 5px;}
+
+/*Slide 3*/
+.slidethree {
+ background: url('/images/HomePage/jeep-gift-guide-slide-bg.jpg') center center no-repeat;
+ background-size: cover;
+ text-align:left;}
+
+.slidethree article {
+ flex: 1 110px;}
+
+.slidethree article:last-of-type {
+ flex-grow: 2;
+ display: flex;
+ flex-flow: row wrap;
+ align-items: center;}
+
+.slidethree i {
+ font: 105px/85% Brush Script MT;
+ color: #f6d003;
+ padding-left: 5px;
+ letter-spacing: .5px;
+ -webkit-text-stroke-width: 0px;}
+
+.slidethree article:last-of-type div p {
+	display: inline-block;
+ vertical-align: middle;
+	text-shadow: 5px 5px 5px rgb(0 0 0 / 55%);
+ margin: 0px 0px 0px 0px !important;}
+
+.slidethree .jeepgiftguide {
+	background-color: #cc1612;
+	font: bold 60px/110% Arial;
+	color: #f9cd08;
+	padding: 2px 10px 10px 10px;
+	letter-spacing: -3px;}
+
+.slidethree .arrow {
+ font: bold 97px/0% Arial;
+ color: #f9cd08;
+ margin-left: -5px;}
+
+.slidethree article div {
+ color: #f9cd08;
+ flex-basis: 375px;}
+
+.slidethree article div:first-of-type {
+ flex-grow: 0;}
+
+.slidethree article div:last-of-type {
+ flex-grow: 3;}
+
+.slidethree div:last-of-type {
+ color: #ffffff;
+ font: bold 3.5vw/80% Courier New;
+ text-shadow: 5px 5px 5px rgb(0 0 0 / 55%);
+ letter-spacing: -4px;
+ -webkit-text-stroke: 2px black;
+ text-align: center;}
+
+/*Slide 4*/
+.slidefour *{
+ border: none !important;}
+
+.slidefour {
+ background: url('/images/HomePage/smittybilt-mag-slide-bg.jpg') right center no-repeat;
+ background-size: cover;}
+
+.slidefour i {
+ margin: 0px .5% 0px -.5%;}
+
+.slidefour article {
+ flex: unset;
+ font-weight: bold;
+ line-height: 70%;
+ font-family: Tahoma;
+ letter-spacing: -3.5px;
+ color: white;
+ -webkit-text-stroke-width: 0px;
+ text-align: center;}
+
+.slidefour span {
+ font-size: 3.75vw;
+ line-height: 85%;
+ text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+
+.slidefour article:first-of-type img {
+ max-width: 595px;}
+
+.slidefour article:last-of-type img {
+ float: left;
+ width: 300px;}
+
+/*Slide 5*/
+.slidefive {
+ background: url('/images/HomePage/wheels-slide-bg.jpg') center center no-repeat;
+ background-size: cover;
+ color: #ffdc00;
+ letter-spacing: .5px;
+ line-height: .95;
+ text-align: center;}
+
+.slidefive article {
+ flex-basis: 10px;
+ font-family: Tahoma;
+ font-weight: bold;
+ -webkit-text-stroke-width: 0px;
+ text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+
+.slidefive article:first-of-type {
+  font-size: 43px;
+  flex-grow: 1;}
+
+.slidefive article:last-of-type {
+ flex-grow: 0;
+ color: white;
+ background-color: rgba(0, 0, 0, .6);
+ text-transform: uppercase;}
+
+/*Slide 6*/
+.slidesix * {
+ border: none !important;}
+
+.slidesix {
+ background: url('/images/HomePage/youtube-slide-bg.jpg') left top no-repeat;
+ background-size: cover;
+ color: #e7b72f;
+ align-items: center;}
+
+.slidesix article {
+ display: flex;
+ flex-basis: 260px;
+ max-height: 260px;}
+
+.slidesix article:first-of-type {
+ flex-grow: 3;
+ text-align: center;}
+
+.slidesix article:first-of-type div {
+ flex-basis: 70px;
+ font-family: Georgia;}
+
+.slidesix article:first-of-type div:first-of-type {
+ line-height: 100%;
+ font-size: 6vw;
+ flex-grow: 1;}
+
+.slidesix article:first-of-type div:last-of-type {
+ line-height: 120%;
+ font-size: 3vw;
+ flex-grow: 0;}
+
+.slidesix article:last-of-type {
+ flex-grow: 1;
+ padding: 0px;
+ display: block;
+ background: url(/images/HomePage/youtube-play-button.png) left center no-repeat;
+ background-size: 60%;
+ text-align: right;}
+
+.slidesix article:last-of-type img {
+ display: inline;
+ vertical-align: middle;
+ width: unset;}
+
+.slidesix article:last-of-type img {
+ margin: 0px 10px 0px 0px;
+ height: unset;
+ max-height: 298px;}
+
+/*Slide 7*/
+.slideseven {
+ background: url('/images/HomePage/towing-starter-kit-slide-bg.jpg') 14% center no-repeat;
+ background-size: cover;
+ color: #ffdc00;
+ letter-spacing: .5px;
+ line-height: .9;}
+
+.slideseven article {
+ flex-basis: 10px;
+ font-family: Tahoma !important;
+ font-weight: bold;
+ line-height: .8;
+ text-align: right;
+ -webkit-text-stroke-width: 0px;
+ text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+
+.slideseven article:first-of-type {
+ flex-grow: 1;}
+
+.slideseven article:last-of-type {
+ flex-grow: 0;}
+
+.slideseven article span {
+ display: block;}
+
+.slideseven article span:first-of-type {
+  font-size: 55px;
+ color: #2CA8D2;
+ text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;}
+
+.slideseven article span:last-of-type {
+ font-size: 145px;
+ color: #f2013f;
+ text-transform: uppercase;
+ letter-spacing: -8px;}
+
+/*Slide 8*/
+.slideeight {
+ background: url('/images/HomePage/atv-exhaust-slide-bg.jpg') 14% center no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;}
+
+.slideeight article {
+ text-align: right;
+ text-shadow: -5px 5px 3px rgba(0, 0, 0, .6), -1px -1px 3px rgba(0, 0, 0, .6), 1px -1px 3px rgba(0, 0, 0, .6), -1px 1px 3px rgba(0, 0, 0, .6), 1px 1px 3px rgba(0, 0, 0, .6);}
+
+.slideeight article div:first-of-type {
+ font-size: 90px;}
+
+.slideeight article div:nth-of-type(2) {
+ font-size: 80px;}
+
+.slideeight article div:last-of-type {
+ font-size: 46px;}
+
+.slideeight span {
+ color: #edb70c;}
+
+.slideeight article div {
+ display: inline;
+ line-height: 1;}
+
+/*Slide 9*/
+.slidenine {
+ background: url('/images/HomePage/motorcycle-exhaust-slide-bg.jpg') top left no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;
+ line-height: .9;}
+
+.slidenine article div span:first-of-type, .slidenine article div span:nth-of-type(2) {
+ -webkit-text-stroke-color: #ffffff;}
+
+.slidenine article div span:nth-of-type(3) {
+ -webkit-text-stroke-color: tomato;}
+
+.slidenine article div span:last-of-type {
+ -webkit-text-stroke-color: chartreuse;}
+
+/*Slide 10*/
+.slideten {
+ background: url('/images/HomePage/dirtbike-exhaust-slide-bg.jpg') top left no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;}
+
+/*Slide 11*/
+.slideeleven {
+ background: url('/images/HomePage/touringbike-exhaust-slide-bg.jpg') top left no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;}
+
+/*Slide 12*/
+.slidetwelve {
+ background: url('/images/HomePage/rush-racing-slide-bg.jpg') 40% top no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;}
+
+.slidetwelve article {
+ display: inline-flex;
+ justify-content: center;
+ flex-basis: 15px;}
+
+.slidetwelve article:first-of-type {
+ flex-grow: 1;
+ background: url('/images/HomePage/rush-racing-logo.png') bottom right no-repeat;
+ background-size: contain;}
+
+.slidetwelve article:last-of-type {
+ flex-grow: 0;
+ font: 24px/1 Courier New;
+ background: rgba(0, 0, 0, .5);
+ text-align: center;}
+
+.slidetwelve article span {
+ flex-basis: 550px;
+ flex-grow: 0;
+ font: 70px/1 Impact;
+ text-transform: uppercase;}
+
+.slidetwelve article span:first-of-type {
+ color: #e7b72f;
+ flex-basis: 0px;
+ flex-grow: 0;
+ padding: 2vh 0px 0px 2vh;
+ transform: rotate(-19deg);
+ -webkit-transform: rotate(-19deg);
+ -moz-transform: rotate(-19deg);
+ -ms-transform: rotate(-19deg);
+ -o-transform: rotate(-19deg);
+ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+
+.slidetwelve article span:last-of-type {
+ color: #7fbe41;
+ flex-grow: 1;
+ text-align: right;
+ padding-right: 10px;
+ font-style: italic;}
+
+/*Slide 13*/
+.slidethirteen {
+ background: url('/images/HomePage/supertrapp-slide-bg.jpg') bottom left no-repeat;
+ background-size: cover;
+ color: #ffffff;
+ letter-spacing: .5px;}
+
+.slidethirteen article {
+ font-size: 88px;
+ display: inline-flex;
+ justify-content: center;
+ flex-basis: 15px;}
+
+.slidethirteen article:first-of-type {
+ flex-grow: 1;
+ background: url('/images/HomePage/supertrapp-logo.png') bottom right no-repeat;
+ background-size: contain;
+ filter: none;
+ -webkit-text-stroke: 0px black;}
+
+.slidethirteen article:last-of-type {
+ flex-grow: 0;
+ font: 24px/1 Tahoma;
+ background: rgba(0, 0, 0, .5);}
+
+.slidethirteen article span {
+ font-family: Impact;
+ line-height: 1.0;
+ text-align: left;
+ text-transform: uppercase;}
+
+.slidethirteen article span:first-of-type {
+ flex-grow: 0;}
+
+.slidethirteen article span:last-of-type {
+ flex-grow: 1;
+ padding-right: 10px;
+ filter: none !important;}
+
+
+
+/* Shared Motorcycle Exhaust Styles (slidenine, slideten, slideeleven) */
+.slidenine article, .slideten article, .slideeleven article {
+ flex-basis: 30px;}
+
+.slidenine article div, .slideten article div, .slideeleven article div {
+ text-align: right;}
+
+.slidenine article span, .slideten article span, .slideeleven article span { 
+ background-size: 100%;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ text-shadow: none;
+ line-height: .9;}
+
+.slidenine article span:first-of-type, .slideten article span:first-of-type, .slideeleven article span:first-of-type, .slidenine article span:nth-of-type(2), .slideten article span:nth-of-type(2), .slideeleven article span:nth-of-type(2) {
+ background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -webkit-linear-gradient(top, rgba(41, 137, 204, 1.0) 0%, transparent 49%, rgba(144, 106, 0, .7) 50%, rgba(217, 159, 0, .6) 60%, transparent 75%);
+ background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);}
+
+.slidenine article span:nth-of-type(3), .slideten article span:nth-of-type(3), .slideeleven article span:nth-of-type(3), .slidenine article span:last-of-type, .slideten article span:last-of-type, .slideeleven article span:last-of-type {
+ background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);
+ background-image: linear-gradient(top, rgba(255, 255, 255, 1.0) 0%, transparent 49%, rgba(0, 0, 0, .2) 50%, transparent 75%);}
+
+.slidenine article div span, .slideten article div span, .slideeleven article div span {
+ -webkit-text-stroke-width: 1px;}
+
+.slideten article div span, .slideeleven article div span {
+ -webkit-text-stroke-color: #222222;}
+
+.slidenine article div span:nth-of-type(3), .slideten article div span:nth-of-type(3), .slideeleven article div span:nth-of-type(3) {
+ background-color: tomato;}
+
+.slidenine article div span:last-of-type, .slideten article div span:last-of-type, .slideeleven article div span:last-of-type {
+ background-color: chartreuse;}
+
+.slidenine article div span:first-of-type, .slideten article div span:first-of-type, .slideeleven article div span:first-of-type {
+ background-color: #ffffff;
+ font-size: 92px;}
+
+.slidenine article div span:nth-of-type(2), .slideten article div span:nth-of-type(2), .slideeleven article div span:nth-of-type(2) {
+ background-color: #ffffff;
+ font-size: 100px;}
+
+.slidenine article div span:nth-of-type(3), .slidenine article div span:last-of-type, .slideten article div span:nth-of-type(3), .slideten article div span:last-of-type, .slideeleven article div span:nth-of-type(3), .slideeleven article div span:last-of-type {
+ font-size: 75px;}
+
+
+/*viewport Styles*/
+@media all and (max-width: 950px) {
+ .slidezero article:first-of-type, .slideone article:first-of-type {
+  font-size: 5vw;}
+ 
+ .slidezero article:last-of-type, .slideone article:last-of-type {
+  font-size: 4vw;}
+ 
+ .slidetwo article:first-of-type {
+  font-size: 13vw;}
+ 
+ .slidethree .bigimpact {
+  font-size: 40px !important;}
+ 
+ .slidefive article:first-of-type {
+  font-size: 4.5vw;}
+ 
+ .slidesix article:last-of-type {
+  background-image: url(/images/HomePage/youtube-play-button-logo.png);
+  background-size: contain;
+  text-align: center;}
+ 
+ .slideseven article span:first-of-type {
+  font-size: 55px;}
+ 
+ .slideseven article span:last-of-type {
+  font-size: 145px;}
+ 
+ .slideeight article {
+  text-align: center;}
+ 
+ .slideeight article div:first-of-type { 
+  font-size: 10vw;}
+ 
+ .slideeight article div:nth-of-type(2) {
+  font-size: 8.9vw;}
+ 
+ .slideeight article div:last-of-type { 
+  font-size: 5vw;}
+ 
+ .slideeight article div:nth-of-type(2) {  
+  font-size: 9vw;}
+ 
+ .slidenine article div span:first-of-type, .slideten article div span:first-of-type, .slideeleven article div span:first-of-type {
+  font-size: 67px;}
+ 
+ .slidenine article div span:nth-of-type(2), .slideten article div span:nth-of-type(2), .slideeleven article div span:nth-of-type(2) {
+  font-size: 100px;}
+ 
+ .slidenine article div span:nth-of-type(3), .slidenine article div span:last-of-type, .slideten article div span:nth-of-type(3), .slideten article div span:last-of-type,
+ .slideeleven article div span:nth-of-type(3), .slideeleven article div span:last-of-type {
+  font-size: 60px;}
+}
+
+@media all and (max-width: 884px) {
+ .slidethree i {
+  font-size: 80px !important;}
+}
+
+@media screen and (max-width: 880px) and (min-width: 800px) {
+ .slidetwo article:first-of-type {
+  text-align: center;}
+}
+
+@media screen and (max-width: 880px) {
+ .slidethree div:last-of-type {
+  font-size: 5vw;}
+ 
+ .slidefour span {
+  font-size: 4vw;}
+ 
+ .slideeight article {
+  font-size: 4vw;}
+}
+
+@media screen and (max-width: 865px) and (min-width: 821px) {
+ .slidesix article {
+  flex-basis: 235px;}
+ 
+ .slideseven article div:last-of-type {
+  font-size: 125px;}
+}
+
+@media all and (max-width: 799px) {
+ /*begin slider expander
+ .col-70 {
+  width: 100% !important;}
+ 
+ .slider-wrapper {
+  width: 100% !important;
+  max-width: unset !important;
+  margin: 0 !important;}
+ 
+ .slider-wrapper, .lean-slider, section, article {
+  border-radius: 0px !important;}
+ end slider expander*/
+ 
+ .slidezero article:first-of-type, .slideone article:first-of-type {
+  font-size: 50px;}
+ 
+ .slidezero article:last-of-type, .slideone article:last-of-type {
+  font-size: 4vw;}
+ 
+ .slidetwo article:first-of-type {
+  font-size: 120px;}
+ 
+ .slidethree div:last-of-type {
+   font-size: 6vw;}
+ 
+ .slidefour span {
+  line-height: 130%;
+  font-size: 35px;}
+ 
+ .slidesix article:last-of-type {
+  background-size: 60%;
+  text-align: right;}
+ 
+ .slidesix article:first-of-type div:first-of-type {
+  line-height: 80%;
+  font-size: 10vw;}
+ 
+ .slidesix article:first-of-type div:last-of-type {
+  line-height: 120%;
+  font-size: 4vw;}
+ 
+ .slideeight article div:first-of-type{  
+  font-size: 13vw !important;}
+ 
+ .slideeight article div:nth-of-type(2) {  
+  font-size: 12vw !important;}
+ 
+ .slideeight article div:last-of-type {  
+  font-size: 6vw !important;}
+}
+
+@media all and (max-width: 670px) { 
+ .slidetwo article:first-of-type {
+  font-size: 18vw;}
+ 
+ .slidefive article:first-of-type {
+  font-size: 6vw;}
+ 
+ .slidesix article:last-of-type {
+  text-align: center;
+  background-size: contain;
+  background-position: center center;}
+ 
+ .slideeight article span:nth-of-type(2) {  
+  font-size: 14vw !important;}
+ 
+ .slideeight article div:last-of-type {  
+  font-size: 6vw !important;}
+ 
+ .slidetwelve article:last-of-type {
+  font-size: 20px;}
+}
+
+@media screen and (max-width: 555px) {
+ .slidezero article:first-of-type {
+  font-size: 50px;}
+ 
+ .slidezero article:last-of-type {
+  font-size: 7vw;}
+ 
+ .slideone article:last-of-type {
+  font-size: 7vw;}
+ 
+ .slidetwo article:first-of-type {
+  text-align: center;
+  font-size: 20vw !important;}
+ 
+ .slidefour span {
+  font-size: 6vw;
+  line-height: 150%;}
+ 
+ .slidefour article:first-of-type img {
+  width:100%;
+  max-width: 420px;
+  margin: auto;}
+ 
+ .slidefour article:last-of-type img {
+  float: none;
+  margin: auto;}
+ 
+ .slidefour article:last-of-type {
+  flex-flow: column wrap;}
+ 
+ .slidefour article:last-of-type div {
+  flex: 1 25px;}
+ 
+ .slidefour article:last-of-type div:last-of-type {
+  font-size: 3.5vh;}
+ 
+ .slidefive article:last-of-type {
+  font-size: 20px;}
+ 
+ .slidesix article:first-of-type {
+  background: url(/images/HomePage/youtube-play-button-logo.png) center center no-repeat;
+  background-size: contain;}
+ 
+ .slidesix article:first-of-type div:first-of-type {
+  font-size: 66px;}
+ 
+ .slidesix article:first-of-type div:last-of-type {
+  line-height: 90%;
+  font-size: 11.5vw;}
+ 
+ .slidesix article:last-of-type {
+  display: none;}
+ 
+ .slideseven article {
+  text-align: center;}
+ 
+ .slideseven article span:first-of-type {
+  font-size: 9.5vw;}
+ 
+ .slideseven article span:last-of-type {
+  font-size: 23vw;}
+ 
+ .slidenine article:first-of-type, .slideten article:first-of-type, .slideeleven article:first-of-type {
+  display: none;}
+ 
+ .slidenine article div, .slideten article div, .slideeleven article div {
+  text-align: center;}
+ 
+ .slidenine article div span:first-of-type, .slideten article div span:first-of-type, .slideeleven article div span:first-of-type {
+  font-size: 17vw;}
+ 
+ .slidenine article div span:nth-of-type(2), .slideten article div span:nth-of-type(2), .slideeleven article div span:nth-of-type(2) {
+  font-size: 26vw;}
+ 
+ .slidenine article div span:nth-of-type(3), .slidenine article div span:last-of-type, .slideten article div span:nth-of-type(3), .slideten article div span:last-of-type,
+ .slideeleven article div span:nth-of-type(3), .slideeleven article div span:last-of-type {
+  font-size: 12vw;}
+ 
+ .slidetwelve article span:first-of-type {
+  font-size: 35px;
+  padding: 1vh 0px 0px 2vh;}
+ 
+ .slidetwelve article span:last-of-type {
+  font-size: 65px;}
+}
+
+@media screen and (max-width: 510px) {
+ .slidezero article:first-of-type, .slideone article:first-of-type {
+  font-size: 40px;}
+ 
+ .slidethree .smallimpact {
+  margin-top: -18px !important;}
+ 
+ .slidethree article {
+  flex-basis: 0px;}
+ 
+ .slidethree div:last-of-type {
+   font-size: 8.5vw;}
+ 
+ .slidethree .jeepgiftguide {
+  font-size: 44px !important;}
+ 
+ .slidetwelve article span:last-of-type {
+  font-size: 48px;}
+ 
+ .slidethirteen article span {
+  font-size: 16vw;
+ text-align: center;}
+}

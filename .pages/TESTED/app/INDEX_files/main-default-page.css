@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+.homeFlexContainer {
+ display: flex;
+ flex-direction: column;}
+
+.flexRow2, .flexRow3, .flexRow4 {
+ display: flex;
+ justify-content: space-around;}
+
+.flexRow3 .homeGridItem {
+ flex-basis: 40%;}
+
+.flexRow2 {
+ flex-wrap: wrap;}
+
+.homeGridItem {
+ margin-right: 1%;
+ margin-bottom: 5px;
+ margin: 0 5px 5px;
+ text-decoration: none;}
+
+.homeGridItem p {
+ font-weight: bold;
+ font-size: 16px;
+ text-align: left;}
+
+.homeGridItem:hover, .homeGridItem:hover img {
+ border-color: #bbbbbb;}
+
+@media screen and (max-width: 500px) {
+ .flexRow3 {
+  flex-wrap: wrap;}
+ 
+ .flexRow3 .homeGridItem {
+  flex-basis: 35%;
+  flex-grow: 1;}
+ 
+ .flexRow3 .homeGridItem:last-of-type {
+  flex-grow: 0;
+  flex-basis: 70%;}
+ 
+ .flexRow4 {
+  flex-wrap: wrap;}
+ 
+ .flexRow4 .homeGridItem {
+  flex-basis: 40%;
+  flex-grow: 1;}
+}
+
+.wheellinkmain {
+ width: fit-content;
+ min-height: 225px;
+ margin: 1% auto 1%;
+ padding: 1%;
+ background: #000000 url(/SiteImages/default/wheel-tire-package-link-bg.jpg) no-repeat center center;
+ background-size: cover;
+ border-radius: 6px;}
+
+.wheellink {
+ width: 97%;
+ min-height: 155px;
+ margin: 0% 0.5% 1%;
+ padding: 1%;
+ border-radius: 6px;
+ background: #000000 url(/Images/Promos/2020/January/balancer-promo-bg-1-2020.jpg) no-repeat bottom left;
+ background-size: cover;
+ text-decoration: none !important;
+ flex-basis: 546px !important;}
+
+.wheellinkmain .wheelslinksgold {
+ color: #e7b72f;
+ font: 53px/95% Impact;/*
+ -webkit-text-stroke-width: .75px;
+ -webkit-text-stroke-color: black;*/
+ display: block;
+ margin-top: 3vw;}
+
+.wheellinkmain .wheelslinkswhite {
+ color: #FFF;
+ font: 30px/95% Impact;/*
+ -webkit-text-stroke-width: .75px;
+ -webkit-text-stroke-color: black;*/
+ margin-top: 25px;}
+
+.wheellink .wheelslinksgold {
+ color: #e7b72f;
+ font: 36px/145% Impact;/*
+ -webkit-text-stroke-width: .75px;
+ -webkit-text-stroke-color: black;*/
+ display: block;
+ margin-top: 25px;}
+
+.wheellink .wheelslinkswhite {
+ color: #FFF;
+ font: 30px/145% Impact;/*
+ -webkit-text-stroke-width: .75px;
+ -webkit-text-stroke-color: black;*/
+ margin-top: 25px;}
+
+.wheellink .wheelslinksred {
+ color: #FF0000;
+ font: 76px/76px Impact;/*
+ -webkit-text-stroke-width: .75px;
+ -webkit-text-stroke-color: black;*/
+ margin: 10px;}
+
+.toppromolinksblack a {
+ color: #000 !important;
+ font: 900 18px/20px sans-serif !important;
+ text-decoration: none !important;}
+
+.toppromolinksgold a {
+ color: #e7b72f !important;
+ font: 30px/95% Impact !important;
+ -webkit-text-stroke-width: .75px !important;
+ -webkit-text-stroke-color: black !important;
+ text-decoration: none !important;}
+
+.nexenpromo {
+ width: 97%;
+ min-height: 155px;
+ margin: 0% 0.5% 1%;
+ padding: 1%;
+ border-radius: 10px;
+ background: #000000 url(/Images/Promos/2021/August/nexen-gear-offroad-promo-bg-8-2021.jpg) no-repeat center center;
+ background-size: cover;
+ text-decoration: none !important;
+ flex-basis: 546px !important;
+ color: #FFF !important;
+ font: 40px/150% Impact;}
+
+.nexenpromo .promo-endDate p {
+ text-align: center;
+ margin: 10px;
+ text-shadow: 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff !important;}
+
+.nexenpurple {
+ color: #812991;}
+
+.rollnlockpromo {
+ text-align: center;
+ background: url(/images/promos/2021/september/rollnlock-100-rebate-a-series-default-bg.jpg);
+ background-size: cover;
+ padding-top: 45px;}
+
+.mickeytpromo {
+ text-align: center;
+ background: url(/images/promos/2021/october/mickeyt-100-tires-rebate-default-bg.jpg) center center no-repeat;
+ background-size: contain;
+ padding-top: 45px;}
+
+.promo-endDate p {
+ text-align: center !important;
+ text-shadow: 0px 0px 5px rgb(255 255 255 / 75%), 0px 0px 5px rgb(255 255 255 / 75%), 0px 0px 5px rgb(255 255 255 / 75%), 0px 0px 5px rgb(255 255 255 / 75%);}
